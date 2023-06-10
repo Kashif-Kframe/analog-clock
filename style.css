@@ -25,7 +25,7 @@
 .clock span {
     position: absolute;
     transform: rotate(calc(30deg * var(--i)));
-    inset: 12px;
+    inset: 4%;
     text-align: center;
 }
 
@@ -38,8 +38,8 @@
 .clock::before {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 6%;
+    height: 6%;
     border-radius: 50%;
     background-color: #fff;
     z-index: 2;
@@ -50,11 +50,31 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    height: 100%;
+    width: 100%;
 }
-.hand i {
+.hand_1 {
     position: absolute;
     background-color: var(--clr);
-    width: var(--w);
-    height: var(--h);
+    width: 3.2%;
+    height: 25%;
     border-radius: 8px;
+    margin-bottom: 25%;
+}
+.hand_2 {
+    position: absolute;
+    background-color: var(--clr);
+    width: 2.5%;
+    height: 31%;
+    border-radius: 8px;
+    margin-bottom: 20%;
+}
+
+.hand_3 {
+    position: absolute;
+    background-color: var(--clr);
+    width: 1.5%;
+    height: 40%;
+    border-radius: 8px;
+    margin-bottom: 10%;
 }

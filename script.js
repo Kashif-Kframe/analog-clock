@@ -26,7 +26,7 @@ class Clock
 
         this.setHeightWidth(options);
 
-        this.setHandsHeight(options);
+        // this.setHandsHeight(options);
 
         this.setFont(options);
     }
@@ -107,6 +107,7 @@ class Clock
         hand1.id = 'hour';
         hand1.style = '--clr:#ff3d58; --h:70px; --w:8px';
         let i1 = document.createElement("i");
+        i1.className = 'hand_1';
         hand1.appendChild(i1);
         clockDiv.appendChild(hand1);
 
@@ -116,6 +117,7 @@ class Clock
         hand2.id = 'min';
         hand2.style = '--clr:#00a6ff; --h:85px; --w:6px';
         let i2 = document.createElement("i");
+        i2.className = 'hand_2';
         hand2.appendChild(i2);
         clockDiv.appendChild(hand2);
 
@@ -125,6 +127,7 @@ class Clock
         hand3.id = 'sec';
         hand3.style = '--clr:#ffffff; --h:95px; --w:4px';
         let i3 = document.createElement("i");
+        i3.className = 'hand_3';
         hand3.appendChild(i3);
         clockDiv.appendChild(hand3);
     }
